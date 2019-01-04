@@ -1,0 +1,35 @@
+
+              <!-- Modal Structure -->
+              <div id="{{ print(coll.ref) }}" class="modal" >
+              
+                <div class="modal-content">
+                  <h4>{{ print(coll.ref) }}</h4>
+                  <div class="row">
+                        <div class="col s12 m12 l4">
+                            <div class="slider" >
+                                <ul class="slides" >    
+                                    {{ _.each(coll.collec,function(coll){}}
+                                      <li>
+                                        <img class="responsive-img" src="{{ print(coll.img) }}" srcset="" style="opacity: 1; width:250px;">
+                                        <div class="caption center-align">
+                                          <h3>This is our big Tagline!</h3>
+                                        </div>
+                                      </li>
+                                    {{});}}   
+                                </ul>
+                        </div>
+                        </div>
+                        <div class="col s12 m12 l4">
+                            <blockquote>Talla : S / M / L</blockquote>
+                               <blockquote>Garantia : 03 Meses Por defecto de fabrica.</blockquote>
+                               <blockquote>Pedidos y Disponibilidad : 0426-6557076.</blockquote>
+                               <blockquote>Correo : nymastrend@gmail.com.</blockquote>
+                        </div>
+                  
+                </div>
+                </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                    </div>
+                
+              </div>

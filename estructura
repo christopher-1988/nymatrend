@@ -1,0 +1,40 @@
+
+
+materialize-css/
+  |--css/
+  |  |--materialize.min.css
+  |  |--custom.css
+  |
+  |--img/
+  | 
+  |--fonts/
+  |  |--material-design-icons
+  |  |--roboto 
+  |
+  |--js/
+  |  |--materialize.min.js
+  |
+  |--index.html
+  
+  
+  directorio de imagen
+  
+  img/
+  |--marca/
+  |  |--logo.jg
+  |  |--img-p-m/
+  |      |--principál.jpg    
+  |
+  |--coll/--colecciones
+  |  |img-p-c/---imagen principal coleccion
+  |  |   |--principál.jpg  
+  |  |img-c-c/---imagen coleccion
+  |      |--subimga.jpg
+  |  |img-p-p/---imagen principal portada
+  |      |--subimga.jpg
+  | 
+  |--/
+  |--/
+  |
+  |--index.html
+  

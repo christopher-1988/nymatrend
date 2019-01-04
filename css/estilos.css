@@ -1,0 +1,123 @@
+.absoluto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.camara {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+}
+
+div.camara:hover img {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+div.camara:hover div.texto:before, div.camara:hover div.texto:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+div.camara:hover div.texto h2 {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+div.camara:hover div.texto p {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+div.camara img {
+  position: relative;
+  display: block;
+ width: calc(100% + 50px);
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+div.camara a {
+  z-index: 100;
+}
+
+div.camara div.texto {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+div.camara div.texto:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 30px;
+  right: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+div.camara div.texto:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+      -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+div.camara div.texto h2 {
+  padding-top: 26%;
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+div.camara div.texto p {
+  padding: 10px 50px;
+  font-size: 20px;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}

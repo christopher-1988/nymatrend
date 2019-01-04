@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Nyma's Trend</title>
+  <meta charset="utf-8">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+ 
+
+    
+    
+  <!--------------cdn------------------->
+    <!-- Compiled and minified CSS -->
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"> -->
+  
+  <!------------fin cdn----------------->
+
+    
+</head>
+<body>
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo pink-text text-darken-2">
+           <img src="marca/logo.png">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html" class="pink-text text-darken-2">Home</a></li>
+        <li><a href="#" class="pink-text text-darken-2">Nosotros</a></li>
+        <li><a href="#" class="pink-text text-darken-2">Contacta</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+  
+        <li><a href="index.html" class="pink-text text-darken-2">Home</a></li>
+        <li><a href="#" class="pink-text text-darken-2">Nosotros</a></li>
+        <li><a href="#" class="pink-text text-darken-2">Contacta</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+    
+    
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        
+        
+          
+        <div class="row center">
+          <!--<h5 class="header col s12 ">LONDON CAlLING</h5>-->
+        </div>
+          <!--equiqueta que sirve para centrar-->
+        <div class="row center"></div>
+          
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img class="responsive-img" src="img/collec/img-prnd-p/portada.jpg" alt="nymas trend"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+     <div class="row">
+        <div class="col l12">
+              <h5 class="center-align cyan-text text-darken-2">-- Vestidos --</h5>     
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+<!--contenido dynamic-->
+
+<div class="container">
+    <div class="row">
+        
+        
+    <div class="col s12 m4 l12">
+         
+        <ul class="section table-of-contents">
+            <!--<li>Filtrar:</li>-->
+            <li></li>
+        
+        </ul>
+    </div>
+        
+    </div>
+</div>  
+    
+    
+<div class="container">
+  <div class="row">
+
+    
+        
+    <!--dynamic-->   
+    <div id="event_capt">    
+    <script id="tmpl-vstd" type="text/x-Handlebars-template">
+    {{#each this }}
+                
+        <div class="col s12 m4 l4">
+          <div class="card large" >
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="responsive-img activator" src="" srcset="" style="opacity: 1;">  
+                </div>
+
+                <div class="card-content">
+                     <a class="waves-effect waves-circle waves-light btn-floating  pink lighten-1" href="#"><i class="material-icons">create</i></a>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">REF: {{name_col}}<i class="material-icons right">close</i></span>
+                    <blockquote>Tipo : </blockquote>
+                    <blockquote>Talla : S / M / L</blockquote>
+                    <blockquote>Garantia : 03 Meses Por defecto de fabrica.</blockquote>
+                    <blockquote>Pedidos y Disponibilidad : 0426-6557076.</blockquote>
+                    <blockquote>Correo : nymastrend@gmail.com</blockquote>
+                    <blockquote>Descripción : </blockquote>   
+                </div>  
+           </div> 
+       </div>
+
+    {{/each}}
+    </script>
+
+        <div id="view-prnd-vstd"></div>
+              
+ </div> <!--fin event capt-->       
+<!--fin-----------------------------dynamic------------------------------------------------------>  
+</div>
+</div>   
+
+    
+
+  <footer class="page-footer cyan darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12">
+        <!--en esta area puedo agregar texto-->    
+          <script id="tmpl-tlf" type="text/x-handlebars-template">
+            
+                <p class="grey-text text-lighten-4">{{st_tlf}}</p>
+                <p class="grey-text text-lighten-4">{{{st_correo}}}</p>
+            </script>
+        
+            
+          <h6 class="white-text">Att. AL CLIENTE</h6>
+          <div id="view-tlf"></div>
+        <!--en esta area puedo agregar texto-->
+
+        </div>
+          
+        <div class="col l4 s12">
+        <!--en esta area puedo agregar texto-->    
+           <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
+              <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li> <a href="#"><i class="fa fa-tumblr"></i></a></li> 
+              <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+      
+    <div class="footer-copyright">
+      <div class="container">
+      Nyma's Trend -  <a class="brown-text text-lighten-3" href="http://materializecss.com">Copyright 2016</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+
+    
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+  <!--framerwork-->
+  <script src="framework/handlebars-v4.0.5.js"></script>
+  <!--fin---framerwork-->
+  <!--app------>
+  <script src="app-collections/app-collection.js"></script>
+  <!--view-->    
+  <script src="js/Raiz.js"></script>
+  <!--fin-app-->    
+  <script src="js/init.js"></script>
+
+    
+<script type="text/javascript">
+    $(document).on("ready",function(){
+        let cod=1;
+       Quadcore(cod);
+    });
+  
+</script>
+    
+    
+  </body>
+</html>
